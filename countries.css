@@ -1,0 +1,80 @@
+
+
+body {
+  
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #2c65c2); /* Gradient background */
+  }
+
+  #logo-gallery-wrapper {
+    padding-left: 150px;
+    opacity: 0.9;
+    width: 500px; /* Increased width */
+    height: 500px; /* Increased height */
+    overflow: hidden;
+    position: relative;
+    border: 3px solid #6e6e6e; /* Stylish border color */
+    border-radius: 40px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    background: white; /* Background for the gallery */
+  }
+
+  #logo-gallery {
+    display: flex;
+    animation: scroll-right-to-left 20s linear infinite; /* Smooth infinite scroll */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    left: 100%; /* Start from the right */
+  }
+
+  #logo-gallery .logo-gallery-figure {
+    margin: 0;
+    padding:  20px; /* Increased padding */
+    display: flex;
+    align-items: center;
+  }
+
+  #logo-gallery .logo-gallery-figure img {
+    
+    padding-top: 0%;
+    margin-top: 70px;
+    width: 400px; /* Increased image width */
+    height:300px; /* Maintain aspect ratio */
+    border-radius:50px; /* Rounded corners for images */
+    transition: transform 0.5s ease, filter 0.5s ease; /* Smooth transitions */
+  }
+
+  #logo-gallery .logo-gallery-figure img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    filter: brightness(1.2); /* Brighten image on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+  }
+
+  @keyframes scroll-right-to-left {
+    0% {
+      transform: translateX(0); /* Start from the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Move to the left */
+    }
+  }
+  figcaption {
+    /* background-color: black; */
+    color: rgb(181, 224, 23);
+    font-style: italic;
+   
+  
+  }
+
+ h1{
+   margin-inline-end: 40PX; 
+  text-align: start;
+  font-family: 'Pacifico', cursive;
+ }
